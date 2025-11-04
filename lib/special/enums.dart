@@ -79,15 +79,37 @@ enum Octave {
   }
 }
 
-enum Instrument {
+enum Instrument {  nylonStringGuitar(bank: 0, program: 24),
+  steelStringGuitar(bank: 0, program: 25),
+  jazzGuitar(bank: 0, program: 26),
+  cleanGuitar(bank: 0, program: 27),
+  overdriveGuitar(bank: 0, program: 29),
+  distortionGuitar(bank: 0, program: 30),
+  bass(bank: 0, program: 33),
   piano(bank: 0, program: 2),
+  celeste(bank: 0, program: 8),
+  synthPad(bank: 0, program: 88),
+  vibraphone(bank: 0, program: 11),
+  rockOrgan(bank: 0, program: 18),
+  pipeOrgan(bank: 0, program: 19),
   violin(bank: 0, program: 40),
-  acousticGuitar(bank: 0, program: 25),
-  electricGuitar(bank: 0, program: 29),
+  cello(bank: 0, program: 42),
+  harp(bank: 0, program: 46),
+  woodBlock(bank: 0, program: 115),
   flute(bank: 0, program: 73),
   trumpet(bank: 0, program: 56),
+  saxophone(bank: 0, program: 64),
+  clarinet(bank: 0, program: 71),
+  accordion(bank: 0, program: 21),
+  harmonica(bank: 0, program: 22),
+  drums(bank: 120, program: 0),
   choir(bank: 0, program: 52),
-  dog(bank: 1, program: 123),;
+  sitar(bank: 0, program: 104),
+  shamisen(bank: 0, program: 106),
+  kalimba(bank: 0, program: 108),
+  bell(bank: 0, program: 112),
+  dog(bank: 1, program: 123),
+  ;
   
   const Instrument({
     required this.bank,
